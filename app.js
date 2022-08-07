@@ -6,6 +6,7 @@ const app = express()
 
 const dataBaseConnect = require('./config/mongo')
 app.use(cors())
+app.use(express.json())
 
 const port = process.env.PORT || 3000
 
