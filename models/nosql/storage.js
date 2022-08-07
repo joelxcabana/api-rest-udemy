@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const storageSchema = new mongoose.Schema(
+const StorageSchema = new mongoose.Schema(
     {
         url:{
             type:String
@@ -14,4 +14,4 @@ const storageSchema = new mongoose.Schema(
     }
 )
 
-module.exports = mongoose.model("storage",storageSchema)
+module.exports = mongoose.model("storage",StorageSchema)
